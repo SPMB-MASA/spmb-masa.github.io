@@ -6,42 +6,29 @@
     <title>SPMB MA SYAMSUL ARIFIN</title>
     
     <link rel="icon" type="image/png" href="https://i.ibb.co.com/JWcFmSGR/logo-MA-Syamsul-Arifin.png">
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght=400;600;700&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        /* Mengunci Layar HP Agar Pas Full Screen dan Tidak Patah-Patah */
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background-color: #ffffff;
+            -webkit-overflow-scrolling: touch; /* Biar scroll di HP lancar */
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            display: block;
+        }
+    </style>
 </head>
-<body style="background-color: #f8f9fa; font-family: 'Plus Jakarta Sans', sans-serif;">
+<body>
 
-    <div class="container text-center" style="margin-top: 25%;">
-        <img src="https://i.ibb.co.com/JWcFmSGR/logo-MA-Syamsul-Arifin.png" alt="Logo MA Syamsul Arifin" style="width: 100px; height: auto; margin-bottom: 20px;">
-        
-        <h4 class="fw-bold text-success">SPMB MA SYAMSUL ARIFIN</h4>
-        <p class="text-muted px-4">Sedang mengalihkan Anda ke halaman formulir pendaftaran resmi...</p>
-        
-        <div class="spinner-border text-success my-3" role="status">
-            <span class="visually-hidden">Loading...</span>
-        </div>
-
-        <div class="mt-3">
-            <a id="linkManual" href="https://script.google.com/macros/s/AKfycbxqv7ZNxOGI7dJvzA1_O9Pthp_4DIIoWMNQwrBrIWsgxCgbfF8PedVe1iafgG4RNNRCYg/exec" class="btn btn-success fw-bold px-4 py-2" style="border-radius: 8px; display: none;">
-                Klik di Sini Jika Halaman Tidak Terbuka
-            </a>
-        </div>
-    </div>
-
-    <script>
-        // SUDAH DIUBAH MENGGUNAKAN LINK BARU ANDA
-        var targetURL = "https://script.google.com/macros/s/AKfycbxqv7ZNxOGI7dJvzA1_O9Pthp_4DIIoWMNQwrBrIWsgxCgbfF8PedVe1iafgG4RNNRCYg/exec";
-
-        // Beri jeda 1.5 detik agar browser HP selesai memuat halaman awal, lalu alihkan
-        setTimeout(function() {
-            window.location.replace(targetURL);
-        }, 1500);
-
-        // Jika dalam 4 detik halaman belum beralih (diblokir sistem HP), munculkan tombol manual
-        setTimeout(function() {
-            document.getElementById("linkManual").style.display = "inline-block";
-        }, 4000);
-    </script>
+    <iframe src="https://script.google.com/macros/s/AKfycbxqv7ZNxOGI7dJvzA1_O9Pthp_4DIIoWMNQwrBrIWsgxCgbfF8PedVe1iafgG4RNNRCYg/exec"></iframe>
 
 </body>
 </html>
