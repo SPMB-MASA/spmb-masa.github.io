@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>SPMB MA SYAMSUL ARIFIN</title>
     
+    <!-- Tampilkan Logo Resmi Sekolah di Tab Browser HP -->
     <link rel="icon" type="image/png" href="https://i.ibb.co.com/JWcFmSGR/logo-MA-Syamsul-Arifin.png">
     
+    <!-- Desain Kartu Loading Modern -->
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght=400;600;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -55,33 +57,36 @@
 <body>
 
     <div class="loading-card text-center">
+        <!-- TAMPILAN UTAMA LOGO MA SYAMSUL ARIFIN -->
         <img src="https://i.ibb.co.com/JWcFmSGR/logo-MA-Syamsul-Arifin.png" alt="Logo MA" class="logo-img">
         
         <h5 class="fw-bold text-success mb-1">SPMB MA SYAMSUL ARIFIN</h5>
         <p class="text-muted small mb-4">Menghubungkan ke Server Formulir Resmi...</p>
         
+        <!-- Animasi Loading Berputar Hijau -->
         <div class="spinner-border text-success mb-4" role="status" style="width: 2.5rem; height: 2.5rem;">
             <span class="visually-hidden">Loading...</span>
         </div>
 
+        <!-- TOMBOL AMAN (ANTI-LAYAR PUTIH): Otomatis muncul jika HP memblokir pengalihan -->
         <div id="boxManual" style="display: none;" class="mt-2 border-top pt-3">
             <p class="small text-danger mb-3">Sistem keamanan HP Anda menahan pengalihan otomatis.</p>
-            <a id="linkManual" href="https://script.google.com/macros/s/AKfycbxqv7ZNxOGI7dJvzA1_O9Pthp_4DIIoWMNQwrBrIWsgxCgbfF8PedVe1iafgG4RNNRCYg/exec" class="btn-redirect w-100">
+            <a id="linkManual" href="https://script.google.com/macros/s/AKfycbxUj86TDmCvfbMkIS7H1A6lNCLp3ZQYcaZzNIvf_czI7dtes6QUcL90rkh9Wcuyfov1Cg/exec" class="btn-redirect w-100">
                 Buka Formulir Pendaftaran
             </a>
         </div>
     </div>
 
     <script>
-        // MENGGUNAKAN LINK BARU YANG ANDA KIRIMKAN
-        var linkTujuan = "https://script.google.com/macros/s/AKfycbxqv7ZNxOGI7dJvzA1_O9Pthp_4DIIoWMNQwrBrIWsgxCgbfF8PedVe1iafgG4RNNRCYg/exec";
+        // SUDAH SAYA PERBARUI MENGGUNAKAN LINK TERBARU ANDA
+        var linkTujuan = "https://script.google.com/macros/s/AKfycbUj86TDmCvfbMkIS7H1A6lNCLp3ZQYcaZzNIvf_czI7dtes6QUcL90rkh9Wcuyfov1Cg/exec";
 
-        // Pengalihan halus setelah 1 detik agar sistem HP tidak kaget
+        // Pengalihan halus setelah 1 detik agar browser HP tidak mendeteksi eror
         setTimeout(function() {
             window.location.replace(linkTujuan);
         }, 1000);
 
-        // Jika dalam 3,5 detik halaman tidak berpindah, munculkan tombol penyelamat manual
+        // Jika dalam 3,5 detik halaman macet (diblokir sistem internal HP), munculkan tombol manual
         setTimeout(function() {
             document.getElementById("boxManual").style.display = "block";
         }, 3500);
